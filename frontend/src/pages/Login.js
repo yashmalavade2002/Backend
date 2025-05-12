@@ -23,7 +23,7 @@ const Login = () => {
             return handleError('email and password are require')
         }
         try {
-            const url = "http://localhost:8080/auth/login";
+            const url = `https://backend-five-woad-82.vercel.app/auth/login`;
             const response = await fetch(url,{
                 method: "POST",
                 headers:{
